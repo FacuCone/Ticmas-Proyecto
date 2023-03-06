@@ -1,0 +1,115 @@
+@keyframes backgroundShow {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;}
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    } to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    } to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%)
+    } to {
+        opacity: 1;
+        transform: translateX(0%)
+    }
+}
+
+@keyframes fromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%)
+    } to {
+        opacity: 1;
+        transform: translateX(0%)
+    }
+}
+
+@keyframes hoverZoom {
+    from {
+        transform: scale(100%);
+    } to {
+        transform: scale(120%);
+    }
+}
+
+#pag1 {
+    animation: backgroundShow 1s ease forwards;}
+
+.foto_titulo {
+    animation: fromRight 1s ease-out forwards;}
+
+.redes {
+    animation: fromLeft 1s ease-out forwards;}
+
+.botonAboutMe {
+    animation: fromBottom 1s ease-out forwards;}
+
+.redes a:hover {
+    animation: hoverZoom 1s forwards;}
+
+.showUp {
+    display: flex;
+    opacity: 1;
+    animation: fromRight 2s ease-out forwards;}
+
+.hide {display: none;}
+
+.appear {
+    display: flex;
+    opacity: 1;
+    animation: fromRight 1s ease-out forwards;
+}
+
+.fondoHTML {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(65, 18, 119, 0.6)
+    )
+    ,url(fondoHTML.jpg);
+    animation: backgroundShow 1s ease;
+    background-size: cover;
+}
+
+.fondoCSS {
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(65, 18, 119, 0.6)
+    )
+    ,url(fondoCSS.jpeg);
+    animation: backgroundShow 1s ease;
+    background-size: cover;
+}
+
+.fondoJS {
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(65, 18, 119, 0.6)
+    )
+    ,url(fondoJS.jpeg);
+    animation: backgroundShow 1s ease;
+    background-size: cover;
+}

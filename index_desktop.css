@@ -1,0 +1,95 @@
+@media screen and (min-width: 767px) {
+
+    .container {
+        width: 100vw;
+        max-width: 1920px;
+    }
+
+    .foto_titulo {
+        flex-direction: row;
+        width: 100vw;
+        /* justify-content: space-around; */
+    }
+
+    #foto {
+        border-radius: 5%;
+        width: 400px; height: 440px;
+        /* margin-right: 100px; */
+    }
+
+    .container_titulo {
+        display: flex;
+        flex-direction: column;
+        /* margin-left: 10%; */
+    }
+
+    .logo {
+        font-size: 5em;
+        text-align: end;
+    }
+
+    .subtext {
+        font-size: 2.5em;
+    }
+
+} /* fin media query > 767px *//* fin media query > 767px *//* fin media query > 767px *//* fin media query > 767px *//* fin media query > 767px */
+
+@media screen and (min-width: 1200px) {
+
+    /* SECCION 1 *//* SECCION 1 *//* SECCION 1 *//* SECCION 1 *//* SECCION 1 *//* SECCION 1 */
+
+    .container {
+        width: 100vw;
+        max-width: 1920px;
+    }
+
+    .foto_titulo {
+        flex-direction: row;
+        width: 100vw;
+    }
+
+    #foto {
+        border-radius: 5%;
+        width: 400px; height: 440px;
+        margin-right: 100px;
+    }
+
+    .container_titulo {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .logo {
+        font-size: 5em;
+        text-align: end;
+    }
+
+    .subtext {
+        font-size: 2.5em;
+    }
+
+    .redes {
+        overflow: hidden;
+        background-color: #ffffff00;
+        margin: 2.5% 2.5%;
+        width: 100vw; height: 100px;
+        max-width: 100vw;
+        justify-content: space-evenly;
+        font-size: 2em;
+    }
+
+    .redes img {width: 32px; height: 32px;}
+
+    .botonAboutMe {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    }
+
+    .botonAboutMe a{
+        padding: 2% 0;
+    }
+
+
+} /* fin media query > 1200px *//* fin media query > 1200px *//* fin media query > 1200px *//* fin media query > 1200px *//* fin media query > 1200px */
