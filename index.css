@@ -289,6 +289,7 @@ a {
 }
 
 .botonesSkill button {
+    overflow-y: hidden;
     background-color: black;
     font-size: 1.5em;
     font-weight: bold;
