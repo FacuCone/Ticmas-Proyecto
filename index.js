@@ -22,23 +22,27 @@ function show(element, fondo){
     let pagina = document.querySelector('#pag3');
     element.classList.toggle('showUp');
 
-    if (fondo === 'fondoHTML') {
-            pagina.classList.toggle('fondoHTML');
-            pagina.classList.remove('fondoCSS', 'fondoJS');
-          } else if (fondo === 'fondoCSS') {
-            pagina.classList.toggle('fondoCSS');
-            pagina.classList.remove('fondoHTML', 'fondoJS');
-          } else if (fondo === 'fondoJS') {
-            pagina.classList.toggle('fondoJS');
-            pagina.classList.remove('fondoCSS', 'fondoHTML');
-          }
+    // if (fondo === 'fondoHTML') {
+    //         pagina.classList.toggle('fondoHTML');
+    //         pagina.classList.remove('fondoCSS', 'fondoJS');
+    //       } else if (fondo === 'fondoCSS') {
+    //         pagina.classList.toggle('fondoCSS');
+    //         pagina.classList.remove('fondoHTML', 'fondoJS');
+    //       } else if (fondo === 'fondoJS') {
+    //         pagina.classList.toggle('fondoJS');
+    //         pagina.classList.remove('fondoCSS', 'fondoHTML');
+    //       }
           console.log('show() funciono');
 }
 
 // La funcion hide() oculta los contenidos de los botones de habilidades
 function hide(element1, element2){
-    element1.classList.remove('showUp');
-    element2.classList.remove('showUp');
+    if (element1.classList.contains('showUp')) {
+        element1.classList.remove('showUp')
+    }
+    if (element2.classList.contains('showUp')) {
+        element2.classList.remove('showUp')
+    }
 }
 
 function centerView (element) {

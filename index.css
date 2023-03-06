@@ -230,7 +230,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: fit-content;
+    /* height: fit-content; */
 }
 
 .botonesSkill img {
