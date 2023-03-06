@@ -26,10 +26,7 @@ section {
     width: 100vw;
 }
 
-h1,
-h2,
-h3,
-a {
+h1,h2,h3,a {
     overflow-y: hidden;
 }
 
@@ -111,6 +108,7 @@ button {
 }
 
 .foto_titulo {
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,6 +116,7 @@ button {
 }
 
 #foto {
+    overflow-y: hidden;
     width: 200px;
     height: 220px;
     border-radius: 50%;
@@ -207,8 +206,7 @@ button {
 /* SECCION 2 */
 /* SECCION 2 */
 
-.pag2,
-.pag3 {
+.pag2, .pag3 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
