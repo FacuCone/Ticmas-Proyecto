@@ -18,7 +18,7 @@ const seccion2 = document.getElementById('pag2')
 const seccion3 = document.getElementById('pag3')
 
 // La función show() muestra los contenidos de los botones de habilidades
-function show(element, fondo){
+function show(element, fondo) {
     let pagina = document.querySelector('#pag3');
     element.classList.toggle('showUp');
 
@@ -32,11 +32,11 @@ function show(element, fondo){
     //         pagina.classList.toggle('fondoJS');
     //         pagina.classList.remove('fondoCSS', 'fondoHTML');
     //       }
-          console.log('show() funciono');
+    console.log('show() funciono');
 }
 
 // La funcion hide() oculta los contenidos de los botones de habilidades
-function hide(element1, element2){
+function hide(element1, element2) {
     if (element1.classList.contains('showUp')) {
         element1.classList.remove('showUp')
     }
@@ -45,40 +45,41 @@ function hide(element1, element2){
     }
 }
 
-function centerView (element) {
-    element.scrollIntoView({behavior: "smooth", block: "center"});
+function centerView(element) {
+    element.scrollIntoView({ behavior: "smooth", block: "center" });
 }
 
 // Funcionalidad de los botones 
-botonHTML.addEventListener('click', function() {
+botonHTML.addEventListener('click', function () {
     centerView(contenidoHTML)
     show(contenidoHTML, fondoHTML);
     hide(contenidoJS, contenidoCSS);
 });
-  
-botonCSS.addEventListener('click', function() {
+
+botonCSS.addEventListener('click', function () {
     centerView(contenidoCSS)
     show(contenidoCSS, fondoCSS);
     hide(contenidoJS, contenidoHTML);
 });
 
-botonJS.addEventListener('click', function() {
+botonJS.addEventListener('click', function () {
     centerView(contenidoJS)
     show(contenidoJS, fondoJS);
     hide(contenidoHTML, contenidoCSS);
 });
 
 // La funcion showSec() muestra secciones al presionar el botón "mi carrera" o "volver"
-function showSec(seccionSelect, seccionSelect2){
+function showSec(seccionSelect, seccionSelect2) {
     if (!seccionSelect.classList.contains('appear')) {
         seccionSelect.classList.add('appear');
         seccionSelect2.classList.add('appear');
     } else {
         centerView(seccionSelect)
-    console.log("showsec funcionó")}
+        console.log("showsec funcionó")
+    }
 }
 
-botonCarrera.addEventListener('click', function() {
+botonCarrera.addEventListener('click', function () {
     showSec(seccion2, seccion3);
     console.log('éxito');
 });

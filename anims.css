@@ -1,15 +1,20 @@
 @keyframes backgroundShow {
     from {
         opacity: 0;
-    } to {
-        opacity: 1;}
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fromTop {
     from {
         opacity: 0;
         transform: translateY(-100%);
-    } to {
+    }
+
+    to {
         opacity: 1;
         transform: translateY(0%);
     }
@@ -19,7 +24,9 @@
     from {
         opacity: 0;
         transform: translateY(100%);
-    } to {
+    }
+
+    to {
         opacity: 1;
         transform: translateY(0%);
     }
@@ -29,7 +36,9 @@
     from {
         opacity: 0;
         transform: translateX(-100%)
-    } to {
+    }
+
+    to {
         opacity: 1;
         transform: translateX(0%)
     }
@@ -39,7 +48,9 @@
     from {
         opacity: 0;
         transform: translateX(100%)
-    } to {
+    }
+
+    to {
         opacity: 1;
         transform: translateX(0%)
     }
@@ -48,7 +59,9 @@
 @keyframes fromRight_element {
     from {
         transform: translateX(100%)
-    } to {
+    }
+
+    to {
         transform: translateX(0%)
     }
 }
@@ -56,31 +69,41 @@
 @keyframes hoverZoom {
     from {
         transform: scale(100%);
-    } to {
+    }
+
+    to {
         transform: scale(120%);
     }
 }
 
 #pag1 {
-    animation: backgroundShow 1s ease forwards;}
+    animation: backgroundShow 1s ease forwards;
+}
 
 .foto_titulo {
-    animation: fromRight 1s ease-out forwards;}
+    animation: fromRight 1s ease-out forwards;
+}
 
 .redes {
-    animation: fromLeft 1s ease-out forwards;}
+    animation: fromLeft 1s ease-out forwards;
+}
 
 .botonAboutMe {
-    animation: fromBottom 1s ease-out forwards;}
+    animation: fromBottom 1s ease-out forwards;
+}
 
 .redes a:hover {
-    animation: hoverZoom 1s forwards;}
+    animation: hoverZoom 1s forwards;
+}
 
 .showUp {
     display: flex;
-    animation: fromRight_element 2s ease-out forwards;}
+    animation: fromRight_element 2s ease-out forwards;
+}
 
-.hide {display: none;}
+.hide {
+    display: none;
+}
 
 .appear {
     display: flex;
@@ -89,34 +112,25 @@
 }
 
 .fondoHTML {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.6),
-        rgba(65, 18, 119, 0.6)
-    )
-    ,url(fondoHTML.jpg);
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.6),
+            rgba(65, 18, 119, 0.6)), url(fondoHTML.jpg);
     animation: backgroundShow 1s ease;
     background-size: cover;
 }
 
 .fondoCSS {
-    background-image:linear-gradient(
-        0deg,
-        rgba(0,0,0,0.6),
-        rgba(65, 18, 119, 0.6)
-    )
-    ,url(fondoCSS.jpeg);
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.6),
+            rgba(65, 18, 119, 0.6)), url(fondoCSS.jpeg);
     animation: backgroundShow 1s ease;
     background-size: cover;
 }
 
 .fondoJS {
-    background-image:linear-gradient(
-        0deg,
-        rgba(0,0,0,0.6),
-        rgba(65, 18, 119, 0.6)
-    )
-    ,url(fondoJS.jpeg);
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.6),
+            rgba(65, 18, 119, 0.6)), url(fondoJS.jpeg);
     animation: backgroundShow 1s ease;
     background-size: cover;
 }
