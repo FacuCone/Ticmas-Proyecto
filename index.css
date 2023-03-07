@@ -20,6 +20,7 @@ body {
     background-color: #faf5faea;
     color: black;
     margin: 0;
+    height: fit-;
 }
 
 section {
@@ -365,25 +366,20 @@ a {
 /* FOOTER */
 /* FOOTER */
 
-.infoContacto,
-.infoContacto p {
-    background-color: black;
+footer, footer p {
+    background-color: #140b12ec;
     width: 100vw;
     color: white;
     display: flex;
+    text-align: center;
+    text-shadow: var(--sombra-texto);
+    font-size: 1em;
+    font-weight: bolder;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1em;
-    font-weight: bolder;
     margin: 0;
-    padding-top: 5px;
-    padding-bottom: 2px;
-}
-
-footer {
-    background-color: black;
-    width: 100vw;
+    padding: 5px 0px;
 }
 
 footer a {

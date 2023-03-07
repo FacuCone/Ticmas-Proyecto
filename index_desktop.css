@@ -5,17 +5,6 @@
         max-width: 1920px;
     }
 
-    .foto_titulo {
-        flex-direction: row;
-        width: 100vw;
-    }
-
-    #foto {
-        border-radius: 5%;
-        width: 400px;
-        height: 440px;
-    }
-
     .container_titulo {
         display: flex;
         flex-direction: column;
@@ -158,7 +147,7 @@
 
 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1220px) {
 
     /* SECCION 1 */
     /* SECCION 1 */
