@@ -97,7 +97,7 @@
     }
 
     .botonesSkill button {
-        
+        font-size: 2em;
     }
 
     .botonesSkill ul {
@@ -115,9 +115,17 @@
         height: 30vw;
     }
 
-    .contenido_html {justify-content: start;}
+    .contenido_html {
+        justify-content: start;
+        padding-left: 25px;
+    }
+
     .contenido_css {justify-content: center;}
-    .contenido_js {justify-content: end;}
+
+    .contenido_js {
+        justify-content: end;
+        padding-right: 25px;
+    }
 
     .contenido_js ul {
         margin-left: 20px;
