@@ -8,20 +8,17 @@
     .foto_titulo {
         flex-direction: row;
         width: 100vw;
-        /* justify-content: space-around; */
     }
 
     #foto {
         border-radius: 5%;
         width: 400px;
         height: 440px;
-        /* margin-right: 100px; */
     }
 
     .container_titulo {
         display: flex;
         flex-direction: column;
-        /* margin-left: 10%; */
     }
 
     .logo {
@@ -104,7 +101,6 @@
     }
 
     .botonesSkill {
-        /* flex-direction: row; */
         justify-content: space-evenly;
         height: fit-content;
         width: 100vw;
@@ -112,10 +108,11 @@
     }
 
     .botonesSkill button {
-
+        
     }
 
     .botonesSkill ul {
+        justify-content: space-evenly;
         font-size: 2.5em;
     }
 
@@ -123,10 +120,18 @@
     .contenido_css,
     .contenido_js {
         flex-direction: row;
-        justify-content: space-around;
+        gap: 25px;
         max-height: none;
         max-width: none;
         height: 30vw;
+    }
+
+    .contenido_html {justify-content: start;}
+    .contenido_css {justify-content: center;}
+    .contenido_js {justify-content: end;}
+
+    .contenido_js ul {
+        margin-left: 20px;
     }
 
 

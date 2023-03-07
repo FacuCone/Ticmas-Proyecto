@@ -98,7 +98,7 @@
 
 .showUp {
     display: flex;
-    animation: fromRight_element 2s ease-out forwards;
+    animation: fromRight_element 1s ease-out forwards;
 }
 
 .hide {

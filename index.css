@@ -42,7 +42,6 @@ h3 {
     font-size: 1..3em;
 }
 
-/* p {text-shadow: var(--sombra-texto);} */
 span {
     font-size: 2.5em;
     font-weight: bolder;
@@ -52,7 +51,6 @@ ul {
     list-style: none;
     padding: 0 5px;
     color: black;
-    /* text-shadow: var(--sombra-texto); */
     max-width: 358px;
     display: flex;
     flex-direction: column;
@@ -141,7 +139,6 @@ a {
 }
 
 .redes a {
-    /* padding: 15px 0px; */
     color: #f5f5f5c4;
     font-weight: bold;
     position: static;
@@ -212,7 +209,6 @@ a {
     color: white;
     width: 100vw;
     text-shadow: var(--sombra-texto);
-    /* background-color: var(--color-bordo); */
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
             rgba(119, 18, 74, 0.6)), url(MEDIA/fondoMobile2.jpg);
@@ -285,7 +281,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /* height: fit-content; */
 }
 
 .botonesSkill button {
@@ -336,6 +331,7 @@ a {
 .contenido_html,
 .contenido_css,
 .contenido_js {
+    overflow-y: hidden;
     display: none;
     flex-direction: column;
     height: fit-content;

@@ -1,3 +1,4 @@
+
 const botonHTML = document.querySelector('#btnHTML');
 const botonCSS = document.querySelector('#btnCSS');
 const botonJS = document.querySelector('#btnJS');
@@ -21,17 +22,6 @@ const seccion3 = document.getElementById('pag3')
 function show(element, fondo) {
     let pagina = document.querySelector('#pag3');
     element.classList.toggle('showUp');
-
-    // if (fondo === 'fondoHTML') {
-    //         pagina.classList.toggle('fondoHTML');
-    //         pagina.classList.remove('fondoCSS', 'fondoJS');
-    //       } else if (fondo === 'fondoCSS') {
-    //         pagina.classList.toggle('fondoCSS');
-    //         pagina.classList.remove('fondoHTML', 'fondoJS');
-    //       } else if (fondo === 'fondoJS') {
-    //         pagina.classList.toggle('fondoJS');
-    //         pagina.classList.remove('fondoCSS', 'fondoHTML');
-    //       }
     console.log('show() funciono');
 }
 
